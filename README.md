@@ -8,6 +8,7 @@
 	<img src="./Screenshot/4.png" alt="Logo" width="200">
 	<img src="./Screenshot/5.png" alt="Logo" width="200">
 </div>
+
 ### 安裝步驟
 
 切換到Pokedex目錄下執行```pod install --repo-update```
