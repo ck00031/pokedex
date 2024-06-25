@@ -32,7 +32,6 @@
 		B645BA4C2C28588300CB24A6 /* APICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645BA4B2C28588300CB24A6 /* APICacheManager.swift */; };
 		B645BA522C2A068200CB24A6 /* PokemonListByTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645BA512C2A068200CB24A6 /* PokemonListByTypeViewController.swift */; };
 		B645BA552C2A06CE00CB24A6 /* PokemonListByTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645BA542C2A06CE00CB24A6 /* PokemonListByTypeViewModel.swift */; };
-		B645BA582C2B205800CB24A6 /* simple_pokeball.gif in Resources */ = {isa = PBXBuildFile; fileRef = B645BA572C2B205800CB24A6 /* simple_pokeball.gif */; };
 		B645BA5A2C2B254D00CB24A6 /* pokeball_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = B645BA592C2B254D00CB24A6 /* pokeball_loading.gif */; };
 		D9BB2F88897B94D0735FCB83 /* Pods_PokedexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BACDB250497F8F327AC88CD /* Pods_PokedexTests.framework */; };
 		E18034FD9487E04D584BEBCE /* Pods_Pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382C8252FF2A5775BD9A356C /* Pods_Pokedex.framework */; };
@@ -91,7 +90,6 @@
 		B645BA4B2C28588300CB24A6 /* APICacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICacheManager.swift; sourceTree = "<group>"; };
 		B645BA512C2A068200CB24A6 /* PokemonListByTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListByTypeViewController.swift; sourceTree = "<group>"; };
 		B645BA542C2A06CE00CB24A6 /* PokemonListByTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListByTypeViewModel.swift; sourceTree = "<group>"; };
-		B645BA572C2B205800CB24A6 /* simple_pokeball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = simple_pokeball.gif; sourceTree = "<group>"; };
 		B645BA592C2B254D00CB24A6 /* pokeball_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pokeball_loading.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -324,7 +322,6 @@
 		B645BA562C2B204C00CB24A6 /* Gifs */ = {
 			isa = PBXGroup;
 			children = (
-				B645BA572C2B205800CB24A6 /* simple_pokeball.gif */,
 				B645BA592C2B254D00CB24A6 /* pokeball_loading.gif */,
 			);
 			path = Gifs;
@@ -451,7 +448,6 @@
 			files = (
 				B645B9FA2C25D00F00CB24A6 /* Assets.xcassets in Resources */,
 				B645B9FD2C25D00F00CB24A6 /* Base in Resources */,
-				B645BA582C2B205800CB24A6 /* simple_pokeball.gif in Resources */,
 				B645B9F82C25D00E00CB24A6 /* Base in Resources */,
 				B645BA5A2C2B254D00CB24A6 /* pokeball_loading.gif in Resources */,
 			);
