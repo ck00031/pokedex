@@ -129,7 +129,6 @@ class DetailViewController: UIViewController {
             }
         }
         
-//        viewModel.fetchPokemonDetail(pokeID: pokeID)
         setData()
         viewModel.fetchSpecies(pokeID: pokeID)
     }
@@ -276,7 +275,10 @@ class DetailViewController: UIViewController {
     }
     
     fileprivate func setData() {
-        guard let pokemonDetail = viewModel.pokemon?.detail else { return }
+        guard let pokemonDetail = viewModel.pokemon?.detail else {
+            viewModel.fetchPokemonDetail(pokeID: pokeID)
+            return
+        }
         
         if let url = URL(string: pokemonDetail.sprites.other.officialArtwork.frontDefault) {
             imageView.sd_setImage(with: url, completed: {

@@ -10,7 +10,6 @@ import Foundation
 class PokemonDetailViewModel: NSObject {
     fileprivate let dataService: PokemonAPIProtocol
     var dataFetched:(()->())?
-    var pokemonDetailData:PokemonDetail?
     var speciesData:SpeciesResponse?
     var evolutionList: [Species] = []
     var pokemon:Pokemon?
@@ -66,6 +65,23 @@ class PokemonDetailViewModel: NSObject {
             self.dataFetched?()
         }, failure: {
             print("failure")
+        })
+    }
+    
+    func fetchPokemonDetail(pokeID:String) {
+        var params:[String : Any] = [:]
+        
+        params["id"] = pokeID
+        
+        dataService.getPokemonDetail(param: params, success: {
+            [weak self] data in
+            var pokemon = Pokemon(name: data.species.name, url: data.species.url)
+            pokemon.favorite = self?.isPokeIDContainsInFavorite(url: data.species.url) ?? false
+            pokemon.detail = data
+            self?.pokemon = pokemon
+            self?.dataFetched?()
+        }, failure: {
+            
         })
     }
     
