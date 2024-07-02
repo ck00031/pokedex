@@ -1,6 +1,6 @@
-# pokedex
+# Pokédex
 
-### 畫面截圖
+### 畫面截圖(Screenshot)
 
 <div style="display: flex; align-items: center;">
 	<img src="./Screenshot/1.png" alt="Logo" width="200">
@@ -47,4 +47,40 @@ Pokédex採用了簡潔明亮的卡片設計來襯托活靈活現的寶可夢們
 而在開發的過程中，發現會需要從URL中提取各種ID，於是便Tools中建立了func getPokeID()，來重覆利用，也透過Unittest來驗證該function的可靠性。
 
 
+-----
 
+### Installation Steps
+
+Run pod install --repo-update in the Pokedex director
+
+### Third-Party Tools Used
+
+	•	Alamofire
+	•	SDWebImage
+	•	Snapkit
+
+### Project Description
+
+Pokédex uses a clean and bright card design to showcase the lively Pokémon. Each card’s background color is based on the average color of the Pokémon, which complements the Pokémon without overshadowing it, providing a comfortable visual effect and made pokemons more vibrant.
+
+### Features of Pokédex
+
+- Pokémon List: Click the filter button at the bottom right of the main screen to switch.
+- Favorite Pokémon List: Click the filter button at the bottom right of the main screen to switch.
+- Pokémon List by Type: Click on the type on the card to enter the list of Pokémon of that type.
+- Grid/List Switch: Click the button at the top right to switch.
+- Favorite Function: You can favorite Pokémon in each list and detail page.
+- Evolution Chain: The detail page provides the evolution chain of the Pokémon.
+- Auto Loading: When scrolling to the bottom of the screen, the next page of data will be automatically fetched.
+
+### Architecture and Implementation
+
+The architecture uses MVVM to separate business logic and UI code, making the code cleaner and more testable.
+
+I also separated the API layer and created an API Router, which helps manage various APIs effectively and quickly create mock data.
+
+In the NetworkManager of the API layer, I added a simple caching mechanism that stores the raw JSON of the API locally for a short period to avoid redundant API calls.
+
+For favoriting Pokémon, I chose to use the fastest userDefault for storage, simply for the sake of speed.
+
+During development, I found a need to extract various IDs from URLs, so I created a func getPokeID() in the Tools for repeated use, and verified its reliability through Unittest.
